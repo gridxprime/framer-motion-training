@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 678px) {
+
+    .container{
+        width: 95%;
+    }
+
+    .hero{
+        padding-top: 70px;
+    }
+
+
+
+header ul{
+    left: 0;
+    right: 0;
+
+}
+
+    .hero__cube{
+        width: 270px;
+    }
+    .hero__cube img{
+        height: 90%;
+    }
+}
