@@ -1,7 +1,7 @@
 import React from 'react'
 import zombie from '../assets/img/zombie.png'
 import { motion } from 'framer-motion'
-
+import { Link } from 'react-router-dom'
 function Homepage() {
   return (
     <>
@@ -93,7 +93,7 @@ function Homepage() {
         </div>
       </section>
       <section className='start'>
-        <h2>Drag</h2>
+        <h2>Drag & Move</h2>
         <div className="start__blocks">
           <motion.div drag 
           dragConstraints={{                    
@@ -169,6 +169,7 @@ function Homepage() {
           </motion.div>
         </div>
       </section>
+      
     </>
   )
 }

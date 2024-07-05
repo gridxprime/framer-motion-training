@@ -40,7 +40,12 @@ const toggleNav = () => {
         </Outlet>
 
     <footer>
-    Aibek
+      <div className="footer__inner">
+        <span>Aibek Everon</span>
+        <span><a href="https://www.t.me/till_morning_comes">Telegram</a></span>
+        <span><a href="https://www.github.com/gridxprime">GitHub</a></span>
+      </div>
+    <div className="footer__bottom"></div>
     </footer>
     </div>
     </>

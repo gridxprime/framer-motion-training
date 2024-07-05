@@ -10,7 +10,7 @@
 
 
     .start__block1{
-        width: 35vw;
+        width: 30vw;
     }
 
     .start__blocks{
@@ -23,7 +23,7 @@
     }
 
     .hero, .links, .contacts, .about{
-        padding-top: 25px;
+        padding-top: 27.5px;
     }
 
 header{
@@ -73,4 +73,6 @@ header ul{
     .hero__cube{
         width: 200px;
     }
+
+
 }

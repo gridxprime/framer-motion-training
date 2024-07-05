@@ -102,6 +102,15 @@ header nav{
 
 .about{
   padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  line-height: 1.5;
+  padding-bottom: 5vh;
+}
+
+.skills__list{
+  list-style-type: circle;
 }
 
 .not__found{
@@ -189,12 +198,13 @@ header .burger__menu-btn span{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-  width: 80%;
+  width: 90%;
   place-items: center;
   overflow: hidden;
-  padding: 50px 0;
+
   gap: 1vh;
   margin: 0 auto;
+  padding: 12%;
 }
 
 .start__block1{
@@ -206,3 +216,44 @@ justify-content: center;
 }
 
 
+.circle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: 50% 0;
+}
+
+.circle .stick{
+  width: 5px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.circle .round{
+  width: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #fff;
+}
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 3vw;
+  background: #1f1f1f;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer a{
+  color: #fff;
+  text-decoration: none;
+}
