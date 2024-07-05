@@ -96,38 +96,74 @@ function Homepage() {
         <h2>Drag</h2>
         <div className="start__blocks">
           <motion.div drag 
-          dragConstraints={{left: 10, right: 10, top: 10, bottom: 10}}
-          whileTap={{background: '#5f5f5f' , borderRadius: '10px'}}
+          dragConstraints={{                    
+            top: -150,
+            right: 150,
+            bottom: 150,
+            left: -150,}}
+          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+
+          whileTap={{background: '#5f5f5f' , borderRadius: '10px', outline:'3px solid orange'}}
           className="start__block1">
 
           </motion.div>
           <motion.div drag 
-          dragConstraints={{left: 10, right: 10, top: 10, bottom: 10}}
-          whileTap={{background: '#5f5f5f', borderRadius: '10px'}}
+          dragConstraints={{                    
+            top: -150,
+            right: 150,
+            bottom: 150,
+            left: -150,}}
+          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+
+          whileTap={{background: '#5f5f5f', borderRadius: '10px', outline:'3px solid orange'}}
           className="start__block1">
 
           </motion.div>
           <motion.div drag 
-          dragConstraints={{left: 10, right: 10, top: 10, bottom: 10}}
-          whileTap={{background: '#5f5f5f' , borderRadius: '10px'}}
+          dragConstraints={{
+          top: -150,
+            right: 150,
+            bottom: 150,
+            left: -150,}}
+          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+
+          whileTap={{background: '#5f5f5f' , borderRadius: '10px', outline:'3px solid orange'}}
           className="start__block1">
 
           </motion.div>
           <motion.div drag 
-          dragConstraints={{left: 10, right: 10, top: 10, bottom: 10}}
-          whileTap={{background: '#5f5f5f' , borderRadius: '10px'}}
+          dragConstraints={{                    
+            top: -150,
+            right: 150,
+            bottom: 150,
+            left: -150,}}
+          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+
+          whileTap={{background: '#5f5f5f' , borderRadius: '10px', outline:'3px solid orange'}}
           className="start__block1">
 
           </motion.div>
           <motion.div drag 
-          dragConstraints={{left: 10, right: 10, top: 10, bottom: 10}}
-          whileTap={{background: '#5f5f5f', borderRadius: '10px'}}
+          dragConstraints={{                    
+            top: -150,
+            right: 150,
+            bottom: 150,
+            left: -150,}}
+          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+
+          whileTap={{background: '#5f5f5f', borderRadius: '10px', outline:'3px solid orange'}}
           className="start__block1">
 
           </motion.div>
           <motion.div drag 
-          dragConstraints={{left: 10, right: 10, top: 10, bottom: 10}}
-          whileTap={{background: '#5f5f5f' , borderRadius: '10px'}}
+          dragConstraints={{                    
+            top: -150,
+            right: 150,
+            bottom: 150,
+            left: -150}}
+          dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+
+          whileTap={{background: '#5f5f5f' , borderRadius: '10px', outline:'3px solid orange'}}
           className="start__block1">
 
           </motion.div>
