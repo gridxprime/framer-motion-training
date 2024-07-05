@@ -2,7 +2,11 @@ import React from 'react'
 import zombie from '../assets/img/zombie.png'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import gear from '../assets/img/gear.png'
+
 function Homepage() {
+
+
   return (
     <>
       <section className='hero'>
@@ -94,6 +98,9 @@ function Homepage() {
       </section>
       <section className='start'>
         <h2>Drag & Move</h2>
+        <span>
+        Framer engine uses physical models such as springs and dampers to simulate motion.
+        </span>
         <div className="start__blocks">
           <motion.div drag 
           dragConstraints={{                    
@@ -169,6 +176,55 @@ function Homepage() {
           </motion.div>
         </div>
       </section>
+      <section className='third'>
+      <h2>Gears</h2>
+      <span>
+      Gears move smoothly and in sync thanks to the physics models built into Framer Motion. 
+      Spring rate and damping settings provide natural movement, creating the feeling of a real mechanical system.
+      </span>
+      <div className="gears">
+            <motion.img animate={{rotate: 360}}
+            transition={{delay: .7, duration: 3, repeat: Infinity, repeatType: 'loop', ease: 'linear' }} src={gear} alt="" />
+            <motion.img animate={{rotate: -360}}
+            transition={{ duration: 3, repeat: Infinity, type: 'keyframes',repeatType: 'loop', ease: 'linear' }} src={gear} alt="" />
+            <motion.img animate={{rotate: 360}}
+            transition={{delay: .7, duration: 3, repeat: Infinity, repeatType: 'loop', ease: 'linear' }} src={gear} alt="" />
+            <motion.img animate={{rotate: -360}}
+            transition={{ duration: 3, repeat: Infinity, repeatType: 'loop', ease: 'linear' }} src={gear} alt="" />
+            <motion.img animate={{rotate: 360}}
+            transition={{delay: .7, duration: 3, repeat: Infinity, repeatType: 'loop', ease: 'linear' }} src={gear} alt="" />
+            <motion.img animate={{rotate: -360}}
+            transition={{ duration: 3, repeat: Infinity, repeatType: 'loop', ease: 'linear' }} src={gear} alt="" />
+
+      </div>
+    </section>
+    <section className='end'>
+      <h2>Physics</h2>
+      <span>
+      This movement obeys the law of the harmonic oscillator, which 
+      describes the behavior of systems that oscillate under the action 
+      of elastic forces. This law states that such systems
+       tend to return to a state of equilibrium, while making periodic
+        movements.
+      </span>
+      <motion.div
+      
+      initial={{delay: 1, rotate: 0, duration: 1}}
+      animate={{rotate: [30, -30], }}
+      transition={{duration: 2,delay: 2, repeat: Infinity, repeatDelay: 2, repeatType: 'mirror', type: 'spring', }}
+      
+      className="end__cube">
+        <motion.div
+        
+        initial={{rotate: 360, x: '115%', }}
+        animate={{rotate: 0, x: '-115%'}}
+        transition={{duration: 1.6, delay: 2.4, repeat: Infinity, repeatDelay: 2.4, repeatType: 'mirror', type: 'spring',}}
+        
+        className="end__cube-circle">
+
+        </motion.div>
+      </motion.div>
+    </section>
       
     </>
   )

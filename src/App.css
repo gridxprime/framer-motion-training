@@ -84,7 +84,6 @@ header nav{
 
 .hero{
   display: flex;
-  gap: 10vw;
   padding-top: 120px;
   justify-content: space-between;
   overflow-y: hidden;
@@ -94,6 +93,7 @@ header nav{
   display: flex;
   flex-direction: column;
   gap: 5vh;
+  width: 50%;
 }
 
 .left span{
@@ -256,4 +256,59 @@ footer{
 footer a{
   color: #fff;
   text-decoration: none;
+}
+
+.gears{
+  padding: 5vh 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+
+
+}
+
+.gears img{
+  height: 200px;
+
+}
+
+
+.third{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.end{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  overflow: hidden;
+}
+
+.end span{
+  line-height: 1.5;
+}
+
+.end__cube{
+  width: 400px;
+  aspect-ratio: 1/1;
+  background: url('./assets/img/end__cube.jpg');
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 10% auto;
+}
+
+.end__cube-circle{
+  height: 30%;
+  aspect-ratio: 1/1;
+
+  border-radius: 50%;
+  filter: drop-shadow(#000 10px 10px 5px);
+  background: url('../public/coin.png');
+  background-size: 100%;
 }
