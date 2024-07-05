@@ -9,6 +9,14 @@
 @media (max-width: 678px) {
 
 
+    .start__block1{
+        width: 35vw;
+    }
+
+    .start__blocks{
+        grid-template-columns: repeat(2, 1fr);
+        place-items: start;
+    }
 
     .container{
         width: 95%;

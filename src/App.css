@@ -177,3 +177,31 @@ header .burger__menu-btn span{
   outline: none;
   padding: 10px;
 }
+
+
+.start{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.start__blocks{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+  width: 80%;
+  place-items: center;
+  overflow: hidden;
+  padding: 50px 0;
+  gap: 3vh;
+  margin: 0 auto;
+}
+
+.start__block1{
+  width: 20vw;
+  aspect-ratio: 1/1;
+  background: #3f3f3f;
+  display: flex;
+}
+
+

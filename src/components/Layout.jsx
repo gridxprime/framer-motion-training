@@ -33,12 +33,12 @@ const toggleNav = () => {
           <span></span>
         </button>
     </header>
-    <div className="container">
+
         <Outlet>
 
 
         </Outlet>
-    </div>
+
     <footer>
     Aibek
     </footer>
