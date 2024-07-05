@@ -13,7 +13,7 @@ function Homepage() {
           transition={{ delay: .2, duration: 0.5, ease: 'easeOut' }}
        
       >
-          <span><b>Welcome Back!</b></span>
+          <h2><b>Welcome Back!</b></h2>
         </motion.div>
 
         <motion.div
@@ -93,7 +93,7 @@ function Homepage() {
         </div>
       </section>
       <section className='start'>
-
+        <h2>Beware</h2>
       </section>
     </>
   )

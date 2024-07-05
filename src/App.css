@@ -24,7 +24,7 @@ body{
 }
 section{
   min-height: 100vh;
-  padding: 20px 0;
+  padding: 40px 0 0;
   overflow-x: hidden;
 }
 
@@ -35,22 +35,24 @@ section{
 
 }
 
-header{
 
-
-
-
-
-z-index: 4000;
+.links{
+  padding-top: 120px;
 }
+
+
+.contacts{
+  padding-top: 120px;
+}
+
 
 header ul{
   z-index: 4000;
   padding: 20px 0;
   position: fixed;
   top: 0;
-  left: 5%;
-  right: 5%;
+  left: 0;
+  right: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
@@ -63,6 +65,15 @@ header a{
   padding: 5px;
 }
 
+header nav{
+
+  display: flex;
+
+}
+
+
+
+
 .active{
   color: #3f3f3f;
 
@@ -74,8 +85,9 @@ header a{
 .hero{
   display: flex;
   gap: 10vw;
-  padding-top: 150px;
+  padding-top: 120px;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 
 .left{
@@ -137,5 +149,31 @@ header a{
 
 
 header .burger__menu-btn{
-  margin-left: auto;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #000;
+  top: 5%;
+  right: 5%;
+  padding: 10px;
+  border: none;
+}
+
+
+header .burger__menu-btn span{
+  height: 3px;
+  width: 20px;
+  background: #fff;
+}
+
+.burger__menu-close{
+  display: none;
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;
 }
