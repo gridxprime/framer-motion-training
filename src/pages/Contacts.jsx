@@ -10,6 +10,12 @@ function Contacts() {
             animate={{y: 0, opacity: 1}}
             transition={{delay: .3, duration: .5}}
           >Contacts</motion.h2>
+          <div className="contacts__contacts">
+            <span>Kyrgyzstan, Bishkek</span>
+            <span><a href="https://www.github.com/gridxprime">GitHub</a></span>
+            <span><a href="mailto:till_morning_comes@mail.ru">E-Mail</a></span>
+            <span><a href="https://www.t.me/till_morning_comes">Telegram</a></span>
+          </div>
       </section>
     </>
   )

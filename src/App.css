@@ -20,7 +20,7 @@ body{
 }
 ::-webkit-scrollbar-thumb{
   background: #1f1f1f;
-  border-radius: 15px;
+
 }
 section{
   min-height: 100vh;
@@ -38,13 +38,36 @@ section{
 
 .links{
   padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 }
 
+.links__links{
+  display: flex;
+  flex-direction: column;
+  line-height: 2
+}
+.links a{
+  color: #fff;
+
+}
 
 .contacts{
   padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.contacts a{
+  color: #fff;
 }
 
+.contacts__contacts{
+  display: flex;
+  flex-direction: column;
+  line-height: 2
+}
 
 header ul{
   z-index: 4000;
@@ -309,6 +332,6 @@ footer a{
 
   border-radius: 50%;
   filter: drop-shadow(#000 10px 10px 5px);
-  background: url('../public/coin.png');
+  background: url('../coin.png');
   background-size: 100%;
 }
